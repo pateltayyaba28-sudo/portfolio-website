@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Tayyaba Patel — Full-Stack Developer. Portfolio showcasing projects, skills, and experience in modern web development." />
-  <title>Tayyaba Patel | Full-Stack Developer</title>
+  <meta name="description" content="Tayyaba Patel — Frontend Developer crafting modern, responsive web applications with React, TypeScript and Next.js. Based in Pimpri Chinchwad, India." />
+  <title>Tayyaba Patel | Frontend Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -12,16 +12,25 @@
 </head>
 <body>
 
+  <!-- ===== SCROLL PROGRESS BAR ===== -->
+  <div class="scroll-progress" id="scrollProgress" role="progressbar" aria-label="Page scroll progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
   <!-- ===== NAVBAR ===== -->
   <header class="navbar" id="navbar">
     <div class="nav-container">
-      <a href="#hero" class="nav-logo">TP<span class="dot">.</span></a>
+      <a href="#hero" class="nav-logo" aria-label="Tayyaba Patel — Home">
+        <span class="nav-logo-name">Tayyaba Patel</span>
+        <span class="nav-logo-role">Frontend Developer</span>
+      </a>
 
       <nav class="nav-links" id="navLinks" aria-label="Primary navigation">
-        <a href="#about"   class="nav-link">About</a>
-        <a href="#skills"  class="nav-link">Skills</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#hero"       class="nav-link">Home</a>
+        <a href="#about"      class="nav-link">About</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects"   class="nav-link">Projects</a>
+        <a href="#skills"     class="nav-link">Skills</a>
+        <a href="#contact"    class="nav-link">Contact</a>
+        <a href="mailto:pateltayyaba28@gmail.com" class="btn btn-primary nav-hire-btn">Hire Me</a>
       </nav>
 
       <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
@@ -34,36 +43,138 @@
 
   <!-- ===== HERO ===== -->
   <section class="hero" id="hero">
-    <div class="hero-bg-shapes">
-      <div class="shape shape-1"></div>
-      <div class="shape shape-2"></div>
-      <div class="shape shape-3"></div>
+    <!-- Background decorations -->
+    <div class="hero-bg" aria-hidden="true">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+      <div class="dot-grid"></div>
     </div>
 
-    <div class="hero-content">
-      <p class="hero-greeting fade-up">Hello, I'm</p>
-      <h1 class="hero-name fade-up delay-1">Tayyaba<br /><span class="gradient-text">Patel</span></h1>
-      <p class="hero-tagline fade-up delay-2">Full-Stack Developer crafting elegant, performant web experiences — from pixel-perfect UIs to scalable APIs.</p>
-      <div class="hero-cta fade-up delay-3">
-        <a href="#projects" class="btn btn-primary">View My Work</a>
-        <a href="#contact"  class="btn btn-outline">Get In Touch</a>
+    <div class="hero-inner">
+      <!-- LEFT COLUMN -->
+      <div class="hero-left">
+        <span class="code-bracket fade-up">&lt;/&gt;</span>
+
+        <p class="hero-greeting fade-up delay-1">Hi, I'm</p>
+
+        <h1 class="hero-name fade-up delay-2">
+          <span class="hero-name-pink">Tayyaba</span> Patel
+        </h1>
+
+        <p class="hero-subtitle fade-up delay-3">
+          I build modern, responsive web applications with<br />
+          <strong>React, TypeScript</strong> and <strong>Next.js.</strong>
+        </p>
+
+        <div class="hero-cta fade-up delay-4">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="Tayyaba_Patel_Resume.pdf" download="Tayyaba_Patel_Resume.pdf" class="btn btn-outline">Download CV</a>
+        </div>
+
+        <!-- Tech stack -->
+        <div class="hero-stack fade-up delay-5" aria-label="Tech stack">
+          <span class="stack-label">Tech Stack:</span>
+          <div class="stack-icons">
+            <span class="stack-icon" title="React">
+              <!-- React atom -->
+              <svg viewBox="0 0 32 32" width="26" height="26" aria-hidden="true"><circle cx="16" cy="16" r="2.8" fill="#61dafb"/><ellipse cx="16" cy="16" rx="14" ry="5.5" fill="none" stroke="#61dafb" stroke-width="1.3"/><ellipse cx="16" cy="16" rx="14" ry="5.5" fill="none" stroke="#61dafb" stroke-width="1.3" transform="rotate(60 16 16)"/><ellipse cx="16" cy="16" rx="14" ry="5.5" fill="none" stroke="#61dafb" stroke-width="1.3" transform="rotate(120 16 16)"/></svg>
+              <span>React</span>
+            </span>
+            <span class="stack-icon" title="TypeScript">
+              <svg viewBox="0 0 32 32" width="26" height="26" aria-hidden="true"><rect width="32" height="32" rx="3" fill="#3178c6"/><path d="M9.5 17.5h3v9h2v-9h3v-2h-8v2zm10.5-1.5v11h2v-4.5c0-1.5.8-2.5 2-2.5s1.8.8 1.8 2.5V27h2v-5c0-2.5-1.3-4-3.5-4a3.1 3.1 0 0 0-2.3 1V16z" fill="#fff"/></svg>
+              <span>TypeScript</span>
+            </span>
+            <span class="stack-icon" title="Next.js">
+              <svg viewBox="0 0 32 32" width="26" height="26" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="#000"/><path d="M10 22V10l14 15h-3L10 13v9z" fill="#fff"/><path d="M20 10h2v7.5" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+              <span>Next.js</span>
+            </span>
+            <span class="stack-icon" title="Redux Toolkit">
+              <svg viewBox="0 0 32 32" width="26" height="26" aria-hidden="true"><path fill="#764abc" d="M16 2L2 9v14l14 7 14-7V9zm0 2.3 11.5 5.75L16 15.8 4.5 10.05zm-11.5 7 11.5 5.85v11.7L4.5 23.1zm13.25 17.55V17.25L28.5 11.4v11.7z"/></svg>
+              <span>Redux</span>
+            </span>
+            <span class="stack-icon" title="Material UI">
+              <svg viewBox="0 0 32 32" width="26" height="26" aria-hidden="true"><path fill="#0081CB" d="M3 19.5V7.5l10 5.8V19l-10-5.8V19.5l10 5.8v-6.5L23 12v7l-10 5.8V19L3 13.2z"/><path fill="#00B0FF" d="M13 13.3l10-5.8v5.8l-10 5.8z"/></svg>
+              <span>MUI</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- Feature highlights -->
+        <div class="hero-features fade-up delay-5">
+          <div class="hero-feature">
+            <span class="feature-icon">🎨</span>
+            <div>
+              <strong>Modern UI/UX</strong>
+              <p>Clean, responsive and pixel-perfect designs</p>
+            </div>
+          </div>
+          <div class="hero-feature">
+            <span class="feature-icon code-icon">&lt;/&gt;</span>
+            <div>
+              <strong>Performance Focused</strong>
+              <p>Optimised for speed, accessibility and SEO</p>
+            </div>
+          </div>
+          <div class="hero-feature">
+            <span class="feature-icon">💡</span>
+            <div>
+              <strong>Problem Solver</strong>
+              <p>Turning ideas into real-world solutions with clean code</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="hero-socials fade-up delay-4">
-        <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub" class="social-link">
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
-        </a>
-        <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-link">
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-        </a>
-        <a href="mailto:tayyaba@example.com" aria-label="Email" class="social-link">
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-        </a>
+
+      <!-- RIGHT COLUMN — Avatar -->
+      <div class="hero-right fade-up delay-3" aria-hidden="true">
+        <div class="avatar-wrap">
+          <div class="avatar-deco-ring ring-1"></div>
+          <div class="avatar-deco-ring ring-2"></div>
+          <div class="avatar-box">
+            <img
+              src="avatar.png"
+              alt="Tayyaba Patel"
+              class="avatar-img"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            />
+            <!-- Fallback initials gradient -->
+            <div class="avatar-fallback" style="display:none;">
+              <span class="avatar-initials">TP</span>
+            </div>
+          </div>
+          <!-- Floating blobs around avatar -->
+          <div class="avatar-blob ab1"></div>
+          <div class="avatar-blob ab2"></div>
+        </div>
       </div>
     </div>
 
-    <div class="hero-scroll-hint" aria-hidden="true">
-      <span>Scroll</span>
-      <div class="scroll-line"></div>
+    <!-- Stats bar -->
+    <div class="hero-stats" aria-label="Career statistics">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-pill">
+            <span class="stat-num">2+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat-pill">
+            <span class="stat-num">2,000+</span>
+            <span class="stat-label">Commits</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat-pill">
+            <span class="stat-num">1,000+</span>
+            <span class="stat-label">Merged PRs</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat-pill">
+            <span class="stat-num">7+</span>
+            <span class="stat-label">Production Apps</span>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -71,49 +182,70 @@
   <section class="section about" id="about">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-label">Who I Am</span>
-        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        <span class="section-label"><span class="label-bracket">&lt;/&gt;</span> About Me</span>
+        <h2 class="section-title">Who <span class="pink-text">I Am</span></h2>
       </div>
 
       <div class="about-grid">
-        <div class="about-image-wrapper reveal">
-          <div class="about-image-frame">
-            <div class="about-avatar" aria-label="Tayyaba Patel avatar">
-              <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="160" height="160">
-                <circle cx="100" cy="80" r="42" fill="url(#avatarGrad)"/>
-                <ellipse cx="100" cy="170" rx="60" ry="40" fill="url(#avatarGrad)"/>
+        <!-- Image side -->
+        <div class="about-image-col reveal">
+          <div class="about-frame">
+            <img
+              src="avatar.png"
+              alt="Tayyaba Patel — Frontend Developer"
+              class="about-photo"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            />
+            <div class="about-photo-fallback" style="display:none;">
+              <svg viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg" width="160" height="180" aria-hidden="true">
                 <defs>
-                  <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" style="stop-color:#a855f7"/>
-                    <stop offset="100%" style="stop-color:#3b82f6"/>
+                  <linearGradient id="personGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#FF6B9D"/>
+                    <stop offset="100%" stop-color="#FF79C6"/>
                   </linearGradient>
                 </defs>
+                <circle cx="100" cy="72" r="42" fill="url(#personGrad)" opacity="0.85"/>
+                <ellipse cx="100" cy="180" rx="70" ry="48" fill="url(#personGrad)" opacity="0.75"/>
               </svg>
             </div>
-            <div class="about-badge">
-              <span class="badge-number">3+</span>
-              <span class="badge-label">Years<br/>Experience</span>
+            <div class="open-to-work-badge" aria-label="Open to work">
+              <span class="badge-dot"></span> Open to Work
             </div>
           </div>
+          <!-- Decorative blob -->
+          <div class="about-blob" aria-hidden="true"></div>
         </div>
 
-        <div class="about-text reveal delay-1">
-          <h3 class="about-subtitle">Building the web, one commit at a time.</h3>
-          <p>I'm a passionate Full-Stack Developer based in the UK with over three years of experience turning ideas into robust, beautiful digital products. I specialise in React-powered frontends and Node.js backends, with a strong focus on performance, accessibility, and clean code.</p>
-          <p>When I'm not writing code, you'll find me contributing to open source, mentoring junior developers, or exploring the latest in web standards. I believe great software is built through curiosity, empathy, and relentless iteration.</p>
+        <!-- Text side -->
+        <div class="about-text-col reveal delay-1">
+          <h3 class="about-heading">Building the web, one commit at a time.</h3>
 
-          <div class="about-stats">
-            <div class="stat-item">
-              <span class="stat-num gradient-text">20+</span>
-              <span class="stat-label">Projects Shipped</span>
+          <p class="about-para">
+            I'm a passionate <strong>Frontend Developer</strong> at <strong>Thinkitive Technology</strong>, building production-grade healthcare SaaS applications used by clinics and hospitals across the US.
+          </p>
+          <p class="about-para">
+            I specialise in <strong>React.js, TypeScript</strong> and <strong>Next.js</strong> — from pixel-perfect UI components to complex healthcare workflows like scheduling, billing, charting and CRM. I've built 2 products from scratch and contributed to 7+ production applications, including a <span class="pink-text font-semibold">US patent-pending product</span>.
+          </p>
+          <p class="about-para">
+            When I'm not writing code, I'm exploring new frontend patterns, contributing to open-source, and refining my craft to deliver experiences that are not just functional — but beautiful.
+          </p>
+
+          <div class="about-stats-row">
+            <div class="about-stat">
+              <span class="about-stat-num">2+</span>
+              <span class="about-stat-label">Years Experience</span>
             </div>
-            <div class="stat-item">
-              <span class="stat-num gradient-text">15+</span>
-              <span class="stat-label">Happy Clients</span>
+            <div class="about-stat">
+              <span class="about-stat-num">2K+</span>
+              <span class="about-stat-label">Commits</span>
             </div>
-            <div class="stat-item">
-              <span class="stat-num gradient-text">5K+</span>
-              <span class="stat-label">GitHub Commits</span>
+            <div class="about-stat">
+              <span class="about-stat-num">1K+</span>
+              <span class="about-stat-label">Merged PRs</span>
+            </div>
+            <div class="about-stat">
+              <span class="about-stat-num">7+</span>
+              <span class="about-stat-label">Production Apps</span>
             </div>
           </div>
 
@@ -123,86 +255,236 @@
     </div>
   </section>
 
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label"><span class="label-bracket">&lt;/&gt;</span> Experience</span>
+        <h2 class="section-title">Where I've <span class="pink-text">Worked</span></h2>
+      </div>
+
+      <div class="timeline">
+        <!-- Work experience -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-title-group">
+                <h3 class="timeline-role">Frontend Developer</h3>
+                <p class="timeline-company">Thinkitive Technology</p>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-period">Jul 2024 &ndash; Present</span>
+                <span class="timeline-location">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  Pimpri Chinchwad, India
+                </span>
+              </div>
+            </div>
+
+            <ul class="timeline-bullets">
+              <li>Built <strong>ScoutITAi</strong> (AI observability platform) and <strong>Nemi Care</strong> (LTC healthcare portal) from scratch</li>
+              <li>Delivered healthcare modules across 7+ production apps: scheduling, charting, billing, auth and CRM</li>
+              <li>Built reusable React / TypeScript components with Redux Toolkit, React Query, Material UI and Ant Design</li>
+              <li>Integrated REST APIs, WebSockets, SSE and role-based access control (RBAC)</li>
+              <li>Maintained 2,000+ commits and 1,000+ merged PRs via Git, Jira, Figma and Azure DevOps</li>
+              <li>Contributed to a <span class="patent-badge">&#127942; US Patent-Pending Product</span></li>
+            </ul>
+
+            <div class="timeline-tags">
+              <span class="tag">React</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Next.js</span>
+              <span class="tag">Redux Toolkit</span>
+              <span class="tag">Material UI</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">Azure DevOps</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="timeline-item reveal delay-1">
+          <div class="timeline-dot timeline-dot--edu"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-title-group">
+                <h3 class="timeline-role">BE &mdash; Information Technology</h3>
+                <p class="timeline-company">Dr. Vithalrao Vikhe Patil College of Engineering (DVVPCOE)</p>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-period">2020 &ndash; 2024</span>
+                <span class="timeline-location">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                  Maharashtra, India
+                </span>
+              </div>
+            </div>
+            <p class="timeline-edu-desc">Bachelor of Engineering in Information Technology. Focused on web technologies, data structures, algorithms and software engineering principles.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ===== SKILLS ===== -->
   <section class="section skills" id="skills">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-label">What I Know</span>
-        <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+        <span class="section-label"><span class="label-bracket">&lt;/&gt;</span> Skills</span>
+        <h2 class="section-title">My <span class="pink-text">Tech Stack</span></h2>
       </div>
 
       <div class="skills-grid">
 
-        <div class="skill-card glass reveal">
-          <div class="skill-icon" aria-hidden="true">
-            <svg viewBox="0 0 32 32" width="40" height="40"><path fill="#e34c26" d="M5.902 27.201L3.656 2h24.688l-2.249 25.197L15.985 30z"/><path fill="#ef652a" d="M16 27.858l8.17-2.265 1.922-21.532H16z"/><path fill="#fff" d="M16 13.407h-4.04l-.282-3.165H16V7.151H8.25l.074.83.759 8.517H16zm0 8.489l-.014.004-3.442-.929-.22-2.465H9.221l.433 4.852 6.332 1.758.014-.004z"/><path fill="#ebebeb" d="M15.989 13.407v3.091h3.772l-.355 3.972-3.417.922v3.214l6.338-1.756.047-.521.726-8.131.075-.791zm0-6.256v3.091h7.405l.062-.694.141-1.568.074-.829z"/></svg>
+        <div class="skill-card reveal">
+          <div class="skill-header">
+            <div class="skill-icon-wrap">
+              <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><circle cx="16" cy="16" r="2.8" fill="#61dafb"/><ellipse cx="16" cy="16" rx="14" ry="5.5" fill="none" stroke="#61dafb" stroke-width="1.3"/><ellipse cx="16" cy="16" rx="14" ry="5.5" fill="none" stroke="#61dafb" stroke-width="1.3" transform="rotate(60 16 16)"/><ellipse cx="16" cy="16" rx="14" ry="5.5" fill="none" stroke="#61dafb" stroke-width="1.3" transform="rotate(120 16 16)"/></svg>
+            </div>
+            <div class="skill-info">
+              <span class="skill-name">React.js</span>
+              <span class="skill-pct">92%</span>
+            </div>
           </div>
-          <h3 class="skill-name">HTML5</h3>
-          <p class="skill-desc">Semantic markup, accessibility (ARIA), SEO best practices, and modern HTML APIs.</p>
-          <div class="skill-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" aria-label="HTML5 proficiency 95%">
-            <div class="skill-bar-fill" data-width="95"></div>
+          <div class="skill-bar" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" aria-label="React.js proficiency 92%">
+            <div class="skill-fill" data-width="92"></div>
           </div>
-          <span class="skill-percent">95%</span>
         </div>
 
-        <div class="skill-card glass reveal delay-1">
-          <div class="skill-icon" aria-hidden="true">
-            <svg viewBox="0 0 32 32" width="40" height="40"><path fill="#1572b6" d="M5.902 27.201L3.656 2h24.688l-2.25 25.197L15.985 30z"/><path fill="#33a9dc" d="M16 27.858l8.17-2.265 1.922-21.532H16z"/><path fill="#fff" d="M16 13.634h4.065l.28-3.132H16V7.396H23.8l-.074.827L22.2 24.41 16 26.198z"/><path fill="#ebebeb" d="M16 13.634v3.091h-3.786l-.253-2.849-.03-.341H16v-3.14H8.22l.074.827.759 8.5H16v-3.091h-3.462l-.18-2.003zm0 8.49v3.207l-3.441-.93-.22-2.462H9.237l.432 4.848L16 28.44v-3.2z"/></svg>
+        <div class="skill-card reveal delay-1">
+          <div class="skill-header">
+            <div class="skill-icon-wrap">
+              <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><rect width="32" height="32" rx="3" fill="#3178c6"/><path d="M9.5 17.5h3v9h2v-9h3v-2h-8v2zm10.5-1.5v11h2v-4.5c0-1.5.8-2.5 2-2.5s1.8.8 1.8 2.5V27h2v-5c0-2.5-1.3-4-3.5-4a3.1 3.1 0 0 0-2.3 1V16z" fill="#fff"/></svg>
+            </div>
+            <div class="skill-info">
+              <span class="skill-name">TypeScript</span>
+              <span class="skill-pct">88%</span>
+            </div>
           </div>
-          <h3 class="skill-name">CSS3</h3>
-          <p class="skill-desc">Advanced layouts with Flexbox &amp; Grid, CSS animations, custom properties, and responsive design.</p>
-          <div class="skill-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="CSS3 proficiency 90%">
-            <div class="skill-bar-fill" data-width="90"></div>
+          <div class="skill-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="TypeScript proficiency 88%">
+            <div class="skill-fill" data-width="88"></div>
           </div>
-          <span class="skill-percent">90%</span>
         </div>
 
-        <div class="skill-card glass reveal delay-2">
-          <div class="skill-icon" aria-hidden="true">
-            <svg viewBox="0 0 32 32" width="40" height="40"><path fill="#f0db4f" d="M2 2h28v28H2z"/><path fill="#323330" d="M20.809 23.875a2.866 2.866 0 0 0 2.6 1.6c1.09 0 1.787-.545 1.787-1.3 0-.9-.716-1.222-1.916-1.747l-.658-.282c-1.9-.809-3.16-1.822-3.16-3.964 0-1.973 1.5-3.476 3.853-3.476a3.889 3.889 0 0 1 3.742 2.107l-2.048 1.314a1.789 1.789 0 0 0-1.694-1.127 1.149 1.149 0 0 0-1.262 1.127c0 .789.487 1.109 1.613 1.598l.658.282c2.236.959 3.5 1.938 3.5 4.136 0 2.369-1.861 3.665-4.361 3.665a5.055 5.055 0 0 1-4.771-2.691zm-9.295.228c.413.733.789 1.353 1.693 1.353.864 0 1.41-.338 1.41-1.653v-8.947h2.52v8.982c0 2.724-1.595 3.964-3.926 3.964a4.079 4.079 0 0 1-3.94-2.447z"/></svg>
+        <div class="skill-card reveal delay-2">
+          <div class="skill-header">
+            <div class="skill-icon-wrap">
+              <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><rect width="32" height="32" rx="2" fill="#f0db4f"/><path d="M20.809 23.875a2.866 2.866 0 0 0 2.6 1.6c1.09 0 1.787-.545 1.787-1.3 0-.9-.716-1.222-1.916-1.747l-.658-.282c-1.9-.809-3.16-1.822-3.16-3.964 0-1.973 1.5-3.476 3.853-3.476a3.889 3.889 0 0 1 3.742 2.107l-2.048 1.314a1.789 1.789 0 0 0-1.694-1.127 1.149 1.149 0 0 0-1.262 1.127c0 .789.487 1.109 1.613 1.598l.658.282c2.236.959 3.5 1.938 3.5 4.136 0 2.369-1.861 3.665-4.361 3.665a5.055 5.055 0 0 1-4.771-2.691zm-9.295.228c.413.733.789 1.353 1.693 1.353.864 0 1.41-.338 1.41-1.653v-8.947h2.52v8.982c0 2.724-1.595 3.964-3.926 3.964a4.079 4.079 0 0 1-3.94-2.447z" fill="#323330"/></svg>
+            </div>
+            <div class="skill-info">
+              <span class="skill-name">JavaScript</span>
+              <span class="skill-pct">90%</span>
+            </div>
           </div>
-          <h3 class="skill-name">JavaScript</h3>
-          <p class="skill-desc">ES2024+, async/await, DOM manipulation, Fetch API, Promises, and design patterns.</p>
-          <div class="skill-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="JavaScript proficiency 88%">
-            <div class="skill-bar-fill" data-width="88"></div>
+          <div class="skill-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="JavaScript proficiency 90%">
+            <div class="skill-fill" data-width="90"></div>
           </div>
-          <span class="skill-percent">88%</span>
         </div>
 
-        <div class="skill-card glass reveal">
-          <div class="skill-icon" aria-hidden="true">
-            <svg viewBox="0 0 32 32" width="40" height="40"><circle cx="16" cy="16" r="2.8" fill="#61dafb"/><path fill="none" stroke="#61dafb" stroke-width="1.2" d="M16 10.8c4.1 0 7.8.7 10.5 1.9 3.2 1.4 5 3.3 5 5.2 0 2-1.8 3.9-5.1 5.3-2.7 1.1-6.4 1.8-10.4 1.8s-7.7-.7-10.4-1.8C2.3 21.9.5 20 .5 18.1c0-1.9 1.8-3.8 5-5.2C8.2 11.5 11.9 10.8 16 10.8z"/><path fill="none" stroke="#61dafb" stroke-width="1.2" d="M11.8 13.4c2.1-3.5 4.5-6.4 6.7-8.2 2.6-2.1 5-2.8 6.6-1.9 1.7 1 2.2 3.5 1.6 6.9-.5 2.8-1.8 6.1-3.6 9.3-1.9 3.2-4 5.9-6.1 7.7-2.6 2.2-5.2 3-6.8 2.1-1.6-.9-2.1-3.2-1.6-6.3.5-2.8 1.7-6.2 3.2-9.6z"/><path fill="none" stroke="#61dafb" stroke-width="1.2" d="M11.8 22.7C9.7 19.2 8.3 15.6 7.8 12.7c-.6-3.4 0-5.9 1.6-6.8 1.7-1 4.2-.2 6.8 2 2 1.8 4.1 4.6 5.9 7.9 1.9 3.2 3.1 6.5 3.6 9.2.6 3.4-.1 6-1.7 6.9-1.6.9-4 .1-6.5-2C15.6 28.1 13.8 25.9 11.8 22.7z"/></svg>
+        <div class="skill-card reveal">
+          <div class="skill-header">
+            <div class="skill-icon-wrap">
+              <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="#000"/><path d="M10 22V10l14 15h-3L10 13v9z" fill="#fff"/><path d="M20 10h2v7.5" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+            </div>
+            <div class="skill-info">
+              <span class="skill-name">Next.js</span>
+              <span class="skill-pct">85%</span>
+            </div>
           </div>
-          <h3 class="skill-name">React</h3>
-          <p class="skill-desc">Hooks, Context API, React Query, component architecture, performance optimisation.</p>
-          <div class="skill-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="React proficiency 85%">
-            <div class="skill-bar-fill" data-width="85"></div>
+          <div class="skill-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Next.js proficiency 85%">
+            <div class="skill-fill" data-width="85"></div>
           </div>
-          <span class="skill-percent">85%</span>
         </div>
 
-        <div class="skill-card glass reveal delay-1">
-          <div class="skill-icon" aria-hidden="true">
-            <svg viewBox="0 0 32 32" width="40" height="40"><path fill="#3c873a" d="M16 2a14 14 0 1 0 14 14A14 14 0 0 0 16 2zm-.44 4.43a1.36 1.36 0 0 1 .88 0l6.13 3.54a.9.9 0 0 1 .44.77v7.08a.9.9 0 0 1-.44.77l-6.13 3.54a.88.88 0 0 1-.88 0l-6.13-3.54a.9.9 0 0 1-.44-.77V10.74a.9.9 0 0 1 .44-.77z"/></svg>
+        <div class="skill-card reveal delay-1">
+          <div class="skill-header">
+            <div class="skill-icon-wrap">
+              <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><path fill="#764abc" d="M16 2L2 9v14l14 7 14-7V9zm0 2.3 11.5 5.75L16 15.8 4.5 10.05zm-11.5 7 11.5 5.85v11.7L4.5 23.1zm13.25 17.55V17.25L28.5 11.4v11.7z"/></svg>
+            </div>
+            <div class="skill-info">
+              <span class="skill-name">Redux Toolkit</span>
+              <span class="skill-pct">85%</span>
+            </div>
           </div>
-          <h3 class="skill-name">Node.js</h3>
-          <p class="skill-desc">REST APIs with Express, authentication, middleware, database integrations (PostgreSQL, MongoDB).</p>
-          <div class="skill-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" aria-label="Node.js proficiency 82%">
-            <div class="skill-bar-fill" data-width="82"></div>
+          <div class="skill-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Redux Toolkit proficiency 85%">
+            <div class="skill-fill" data-width="85"></div>
           </div>
-          <span class="skill-percent">82%</span>
         </div>
 
-        <div class="skill-card glass reveal delay-2">
-          <div class="skill-icon" aria-hidden="true">
-            <svg viewBox="0 0 32 32" width="40" height="40"><path fill="#6e40c9" d="M23.76 10.74L16.44 6.3a.93.93 0 0 0-.88 0L8.24 10.74a.9.9 0 0 0-.44.77v8.88a.9.9 0 0 0 .44.77l7.32 4.44a.93.93 0 0 0 .88 0l7.32-4.44a.9.9 0 0 0 .44-.77v-8.88a.9.9 0 0 0-.44-.77z"/><path fill="#fff" d="M16 8.5l5.6 3.25v6.5L16 21.5l-5.6-3.25v-6.5z"/></svg>
+        <div class="skill-card reveal delay-2">
+          <div class="skill-header">
+            <div class="skill-icon-wrap">
+              <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><path fill="#0081CB" d="M3 19.5V7.5l10 5.8V19l-10-5.8V19.5l10 5.8v-6.5L23 12v7l-10 5.8V19L3 13.2z"/><path fill="#00B0FF" d="M13 13.3l10-5.8v5.8l-10 5.8z"/></svg>
+            </div>
+            <div class="skill-info">
+              <span class="skill-name">Material UI / Ant Design</span>
+              <span class="skill-pct">88%</span>
+            </div>
           </div>
-          <h3 class="skill-name">TypeScript &amp; More</h3>
-          <p class="skill-desc">TypeScript, Git, Docker, Next.js, Tailwind CSS, and agile/CI-CD workflows.</p>
-          <div class="skill-bar" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" aria-label="TypeScript proficiency 78%">
-            <div class="skill-bar-fill" data-width="78"></div>
+          <div class="skill-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="Material UI / Ant Design proficiency 88%">
+            <div class="skill-fill" data-width="88"></div>
           </div>
-          <span class="skill-percent">78%</span>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-header">
+            <div class="skill-icon-wrap">
+              <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><path fill="#3c873a" d="M16 2a14 14 0 1 0 14 14A14 14 0 0 0 16 2zm-.44 4.43a1.36 1.36 0 0 1 .88 0l6.13 3.54a.9.9 0 0 1 .44.77v7.08a.9.9 0 0 1-.44.77l-6.13 3.54a.88.88 0 0 1-.88 0l-6.13-3.54a.9.9 0 0 1-.44-.77V10.74a.9.9 0 0 1 .44-.77z"/></svg>
+            </div>
+            <div class="skill-info">
+              <span class="skill-name">Node.js</span>
+              <span class="skill-pct">75%</span>
+            </div>
+          </div>
+          <div class="skill-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="Node.js proficiency 75%">
+            <div class="skill-fill" data-width="75"></div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal delay-1">
+          <div class="skill-header">
+            <div class="skill-icon-wrap">
+              <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><path fill="#4db33d" d="M16 3.5C9.1 3.5 3.5 6.9 3.5 11.1v9.8C3.5 25.1 9.1 28.5 16 28.5s12.5-3.4 12.5-7.6v-9.8C28.5 6.9 22.9 3.5 16 3.5zm0 2.8c5.9 0 9.7 2.6 9.7 4.8 0 2.2-3.8 4.8-9.7 4.8S6.3 13.3 6.3 11.1C6.3 8.9 10.1 6.3 16 6.3zm0 19.4c-5.9 0-9.7-2.6-9.7-4.8v-2c2 1.7 5.5 2.8 9.7 2.8s7.7-1.1 9.7-2.8v2c0 2.2-3.8 4.8-9.7 4.8z"/></svg>
+            </div>
+            <div class="skill-info">
+              <span class="skill-name">MongoDB</span>
+              <span class="skill-pct">72%</span>
+            </div>
+          </div>
+          <div class="skill-bar" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100" aria-label="MongoDB proficiency 72%">
+            <div class="skill-fill" data-width="72"></div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal delay-2">
+          <div class="skill-header">
+            <div class="skill-icon-wrap">
+              <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><path fill="#f05032" d="M29.472 14.753L17.247 2.528a1.8 1.8 0 0 0-2.545 0L12.158 5.07l3.221 3.221a2.141 2.141 0 0 1 2.712 2.728l3.103 3.103a2.141 2.141 0 1 1-1.284 1.22L16.9 12.33v8.146a2.142 2.142 0 1 1-1.757-.062V12.26a2.141 2.141 0 0 1-1.162-2.808L10.794 6.24 2.528 14.504a1.8 1.8 0 0 0 0 2.545l12.225 12.225a1.8 1.8 0 0 0 2.545 0l12.174-12.174a1.8 1.8 0 0 0 0-2.347z"/></svg>
+            </div>
+            <div class="skill-info">
+              <span class="skill-name">Git / Azure DevOps</span>
+              <span class="skill-pct">90%</span>
+            </div>
+          </div>
+          <div class="skill-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="Git / Azure DevOps proficiency 90%">
+            <div class="skill-fill" data-width="90"></div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-header">
+            <div class="skill-icon-wrap">
+              <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><path fill="#2496ed" d="M16 3L3 9.5v13L16 29l13-6.5v-13L16 3zm0 2.3 10 5v11l-10 5-10-5v-11l10-5z"/><circle cx="16" cy="16" r="4" fill="#2496ed" opacity=".7"/></svg>
+            </div>
+            <div class="skill-info">
+              <span class="skill-name">Docker / AWS S3</span>
+              <span class="skill-pct">68%</span>
+            </div>
+          </div>
+          <div class="skill-bar" role="progressbar" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100" aria-label="Docker / AWS S3 proficiency 68%">
+            <div class="skill-fill" data-width="68"></div>
+          </div>
         </div>
 
       </div>
@@ -213,143 +495,190 @@
   <section class="section projects" id="projects">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-label">What I've Built</span>
-        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <span class="section-label"><span class="label-bracket">&lt;/&gt;</span> Projects</span>
+        <h2 class="section-title">What I've <span class="pink-text">Built</span></h2>
       </div>
 
       <div class="projects-grid">
 
-        <!-- Project 1 -->
-        <article class="project-card glass reveal">
-          <div class="project-image" aria-hidden="true">
-            <div class="project-img-bg proj-1">
-              <svg viewBox="0 0 80 50" width="80" height="50" xmlns="http://www.w3.org/2000/svg">
-                <rect x="5" y="5" width="70" height="40" rx="4" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
-                <rect x="10" y="10" width="25" height="3" rx="1.5" fill="rgba(255,255,255,0.5)"/>
-                <rect x="10" y="16" width="40" height="2" rx="1" fill="rgba(255,255,255,0.3)"/>
-                <rect x="10" y="21" width="35" height="2" rx="1" fill="rgba(255,255,255,0.3)"/>
-                <rect x="10" y="30" width="15" height="8" rx="2" fill="rgba(168,85,247,0.6)"/>
-              </svg>
-            </div>
+        <!-- 1 Portfolio Website -->
+        <article class="project-card reveal">
+          <div class="project-top-bar" aria-hidden="true"></div>
+          <div class="project-image proj-1" aria-hidden="true">
+            <svg viewBox="0 0 80 50" width="80" height="50" xmlns="http://www.w3.org/2000/svg">
+              <rect x="5" y="5" width="70" height="40" rx="4" fill="rgba(255,107,157,0.1)" stroke="rgba(255,107,157,0.3)" stroke-width="1"/>
+              <rect x="5" y="5" width="70" height="10" rx="4" fill="rgba(255,107,157,0.25)"/>
+              <circle cx="13" cy="10" r="2.5" fill="rgba(255,100,100,0.7)"/>
+              <circle cx="21" cy="10" r="2.5" fill="rgba(255,200,50,0.7)"/>
+              <circle cx="29" cy="10" r="2.5" fill="rgba(80,200,120,0.7)"/>
+              <rect x="10" y="20" width="28" height="3" rx="1.5" fill="rgba(255,107,157,0.6)"/>
+              <rect x="10" y="26" width="42" height="2" rx="1" fill="rgba(255,107,157,0.25)"/>
+              <rect x="10" y="31" width="36" height="2" rx="1" fill="rgba(255,107,157,0.25)"/>
+              <rect x="10" y="38" width="18" height="6" rx="3" fill="rgba(255,107,157,0.5)"/>
+            </svg>
             <div class="project-overlay">
-              <a href="https://github.com/" target="_blank" rel="noopener" class="project-overlay-link" aria-label="View DevTrack on GitHub">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              <a href="https://github.com/pateltayyaba28-sudo/portfolio-website" target="_blank" rel="noopener noreferrer" class="proj-btn" aria-label="Portfolio Website GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
                 Code
               </a>
-              <a href="https://example.com/" target="_blank" rel="noopener" class="project-overlay-link" aria-label="View DevTrack live demo">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              <a href="https://portfolio-website-eta-kohl-98.vercel.app" target="_blank" rel="noopener noreferrer" class="proj-btn proj-btn-live" aria-label="Portfolio Website Live Demo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
                 Live
               </a>
             </div>
           </div>
-
           <div class="project-body">
+            <div class="project-emoji" aria-hidden="true">🌐</div>
+            <h3 class="project-title">Portfolio Website</h3>
+            <p class="project-desc">Animated personal portfolio with clean pink design, smooth scroll, skill bars and working contact form.</p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2 Weather App -->
+        <article class="project-card reveal delay-1">
+          <div class="project-top-bar" aria-hidden="true"></div>
+          <div class="project-image proj-2" aria-hidden="true">
+            <svg viewBox="0 0 80 50" width="80" height="50" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="40" cy="18" r="10" fill="rgba(255,200,50,0.6)"/>
+              <path d="M15 36 Q20 26 30 28 Q32 20 42 22 Q48 14 58 20 Q66 18 70 28 Q72 30 70 34 Z" fill="rgba(255,107,157,0.2)" stroke="rgba(255,107,157,0.4)" stroke-width="1"/>
+              <line x1="30" y1="40" x2="30" y2="46" stroke="rgba(100,180,255,0.7)" stroke-width="2" stroke-linecap="round"/>
+              <line x1="40" y1="40" x2="40" y2="46" stroke="rgba(100,180,255,0.7)" stroke-width="2" stroke-linecap="round"/>
+              <line x1="50" y1="40" x2="50" y2="46" stroke="rgba(100,180,255,0.7)" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <div class="project-overlay">
+              <a href="https://github.com/pateltayyaba28-sudo/weather-app" target="_blank" rel="noopener noreferrer" class="proj-btn" aria-label="Weather App GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                Code
+              </a>
+              <a href="https://weather-app-delta-blond-82.vercel.app" target="_blank" rel="noopener noreferrer" class="proj-btn proj-btn-live" aria-label="Weather App Live Demo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-emoji" aria-hidden="true">🌤️</div>
+            <h3 class="project-title">Weather App</h3>
+            <p class="project-desc">Real-time weather app with 5-day forecast, Celsius/Fahrenheit toggle and localStorage persistence.</p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">API</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3 Todo App -->
+        <article class="project-card reveal delay-2">
+          <div class="project-top-bar" aria-hidden="true"></div>
+          <div class="project-image proj-3" aria-hidden="true">
+            <svg viewBox="0 0 80 50" width="80" height="50" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="12" width="64" height="8" rx="4" fill="rgba(255,107,157,0.1)" stroke="rgba(255,107,157,0.3)" stroke-width="1"/>
+              <rect x="8" y="23" width="64" height="8" rx="4" fill="rgba(255,107,157,0.1)" stroke="rgba(255,107,157,0.3)" stroke-width="1"/>
+              <rect x="8" y="34" width="64" height="8" rx="4" fill="rgba(255,107,157,0.2)" stroke="rgba(255,107,157,0.4)" stroke-width="1"/>
+              <circle cx="18" cy="16" r="3" fill="rgba(80,200,120,0.8)"/>
+              <path d="M16.5 16 l1.2 1.2 l2.3-2.4" stroke="#fff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              <circle cx="18" cy="27" r="3" fill="rgba(80,200,120,0.8)"/>
+              <path d="M16.5 27 l1.2 1.2 l2.3-2.4" stroke="#fff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              <circle cx="18" cy="38" r="3" stroke="rgba(255,107,157,0.6)" stroke-width="1.2" fill="none"/>
+            </svg>
+            <div class="project-overlay">
+              <a href="https://github.com/pateltayyaba28-sudo/todo-app-react" target="_blank" rel="noopener noreferrer" class="proj-btn" aria-label="Todo App GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                Code
+              </a>
+              <a href="https://todo-app-react-xi.vercel.app" target="_blank" rel="noopener noreferrer" class="proj-btn proj-btn-live" aria-label="Todo App Live Demo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-emoji" aria-hidden="true">✅</div>
+            <h3 class="project-title">Todo App</h3>
+            <p class="project-desc">Feature-rich task manager with drag-to-reorder, dark/light mode, filter tabs and localStorage.</p>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">CSS</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4 E-Commerce UI -->
+        <article class="project-card reveal">
+          <div class="project-top-bar" aria-hidden="true"></div>
+          <div class="project-image proj-4" aria-hidden="true">
+            <svg viewBox="0 0 80 50" width="80" height="50" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="8" width="18" height="20" rx="3" fill="rgba(255,107,157,0.2)" stroke="rgba(255,107,157,0.4)" stroke-width="1"/>
+              <rect x="31" y="8" width="18" height="20" rx="3" fill="rgba(255,121,198,0.25)" stroke="rgba(255,121,198,0.4)" stroke-width="1"/>
+              <rect x="54" y="8" width="18" height="20" rx="3" fill="rgba(255,107,157,0.2)" stroke="rgba(255,107,157,0.4)" stroke-width="1"/>
+              <path d="M32 38 l4-8 h18 l4 8 Z" fill="rgba(255,107,157,0.1)" stroke="rgba(255,107,157,0.3)" stroke-width="1"/>
+              <circle cx="38" cy="42" r="2" fill="rgba(255,107,157,0.5)"/>
+              <circle cx="52" cy="42" r="2" fill="rgba(255,107,157,0.5)"/>
+            </svg>
+            <div class="project-overlay">
+              <a href="https://github.com/pateltayyaba28-sudo/ecommerce-react" target="_blank" rel="noopener noreferrer" class="proj-btn" aria-label="E-Commerce UI GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                Code
+              </a>
+              <a href="https://ecommerce-react-lime-pi.vercel.app" target="_blank" rel="noopener noreferrer" class="proj-btn proj-btn-live" aria-label="E-Commerce UI Live Demo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-emoji" aria-hidden="true">🛍️</div>
+            <h3 class="project-title">E-Commerce UI</h3>
+            <p class="project-desc">Full shopping experience with product grid, category filters, cart with tax calculation and checkout validation.</p>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">React Router</span>
+              <span class="tag">Context API</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5 Blog App -->
+        <article class="project-card reveal delay-1">
+          <div class="project-top-bar" aria-hidden="true"></div>
+          <div class="project-image proj-5" aria-hidden="true">
+            <svg viewBox="0 0 80 50" width="80" height="50" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="6" width="64" height="38" rx="4" fill="rgba(255,107,157,0.07)" stroke="rgba(255,107,157,0.25)" stroke-width="1"/>
+              <circle cx="18" cy="16" r="5" fill="rgba(255,107,157,0.4)" stroke="rgba(255,107,157,0.6)" stroke-width="1"/>
+              <rect x="27" y="12" width="34" height="3" rx="1.5" fill="rgba(255,107,157,0.5)"/>
+              <rect x="27" y="18" width="22" height="2" rx="1" fill="rgba(255,107,157,0.3)"/>
+              <line x1="10" y1="27" x2="70" y2="27" stroke="rgba(255,107,157,0.15)" stroke-width="1"/>
+              <rect x="10" y="31" width="60" height="2" rx="1" fill="rgba(255,107,157,0.2)"/>
+              <rect x="10" y="36" width="44" height="2" rx="1" fill="rgba(255,107,157,0.2)"/>
+            </svg>
+            <div class="project-overlay">
+              <a href="https://github.com/pateltayyaba28-sudo/blog-app-fullstack" target="_blank" rel="noopener noreferrer" class="proj-btn" aria-label="Blog App GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                Code
+              </a>
+              <a href="https://frontend-lyart-chi-89.vercel.app" target="_blank" rel="noopener noreferrer" class="proj-btn proj-btn-live" aria-label="Blog App Live Demo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-emoji" aria-hidden="true">📝</div>
+            <h3 class="project-title">Blog App (Full Stack)</h3>
+            <p class="project-desc">Complete blog platform with JWT auth, CRUD posts, threaded comments, likes and user profiles.</p>
             <div class="project-tags">
               <span class="tag">React</span>
               <span class="tag">Node.js</span>
-              <span class="tag">PostgreSQL</span>
-            </div>
-            <h3 class="project-title">DevTrack</h3>
-            <p class="project-desc">A real-time project management tool with Kanban boards, sprint planning, and team analytics. Features drag-and-drop, live collaboration via WebSockets, and a rich dashboard.</p>
-            <div class="project-footer">
-              <span class="project-stat">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                124 stars
-              </span>
-              <span class="project-stat">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="6" y1="3" x2="6" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg>
-                38 forks
-              </span>
-            </div>
-          </div>
-        </article>
-
-        <!-- Project 2 -->
-        <article class="project-card glass reveal delay-1">
-          <div class="project-image" aria-hidden="true">
-            <div class="project-img-bg proj-2">
-              <svg viewBox="0 0 80 50" width="80" height="50" xmlns="http://www.w3.org/2000/svg">
-                <rect x="5" y="5" width="70" height="40" rx="4" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
-                <circle cx="22" cy="20" r="8" fill="rgba(59,130,246,0.5)"/>
-                <rect x="35" y="13" width="30" height="3" rx="1.5" fill="rgba(255,255,255,0.5)"/>
-                <rect x="35" y="19" width="22" height="2" rx="1" fill="rgba(255,255,255,0.3)"/>
-                <rect x="10" y="35" width="60" height="4" rx="2" fill="rgba(59,130,246,0.3)"/>
-              </svg>
-            </div>
-            <div class="project-overlay">
-              <a href="https://github.com/" target="_blank" rel="noopener" class="project-overlay-link" aria-label="View ShopSphere on GitHub">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
-                Code
-              </a>
-              <a href="https://example.com/" target="_blank" rel="noopener" class="project-overlay-link" aria-label="View ShopSphere live demo">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                Live
-              </a>
-            </div>
-          </div>
-
-          <div class="project-body">
-            <div class="project-tags">
-              <span class="tag">Next.js</span>
-              <span class="tag">TypeScript</span>
-              <span class="tag">Stripe</span>
-            </div>
-            <h3 class="project-title">ShopSphere</h3>
-            <p class="project-desc">A full-featured e-commerce platform with server-side rendering, product search with filters, cart management, Stripe payments, and an admin dashboard for inventory control.</p>
-            <div class="project-footer">
-              <span class="project-stat">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                89 stars
-              </span>
-              <span class="project-stat">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="6" y1="3" x2="6" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg>
-                22 forks
-              </span>
-            </div>
-          </div>
-        </article>
-
-        <!-- Project 3 -->
-        <article class="project-card glass reveal delay-2">
-          <div class="project-image" aria-hidden="true">
-            <div class="project-img-bg proj-3">
-              <svg viewBox="0 0 80 50" width="80" height="50" xmlns="http://www.w3.org/2000/svg">
-                <rect x="5" y="5" width="70" height="40" rx="4" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
-                <polyline points="10,38 22,22 30,28 42,14 55,20 70,10" fill="none" stroke="rgba(168,85,247,0.8)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <circle cx="22" cy="22" r="2" fill="rgba(168,85,247,1)"/>
-                <circle cx="42" cy="14" r="2" fill="rgba(168,85,247,1)"/>
-                <circle cx="55" cy="20" r="2" fill="rgba(168,85,247,1)"/>
-              </svg>
-            </div>
-            <div class="project-overlay">
-              <a href="https://github.com/" target="_blank" rel="noopener" class="project-overlay-link" aria-label="View PulseBoard on GitHub">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
-                Code
-              </a>
-              <a href="https://example.com/" target="_blank" rel="noopener" class="project-overlay-link" aria-label="View PulseBoard live demo">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                Live
-              </a>
-            </div>
-          </div>
-
-          <div class="project-body">
-            <div class="project-tags">
-              <span class="tag">React</span>
-              <span class="tag">D3.js</span>
-              <span class="tag">REST API</span>
-            </div>
-            <h3 class="project-title">PulseBoard</h3>
-            <p class="project-desc">An analytics dashboard with interactive D3.js charts, real-time data streaming, customisable widget layouts, CSV export, and multi-tenant user management with role-based access.</p>
-            <div class="project-footer">
-              <span class="project-stat">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                207 stars
-              </span>
-              <span class="project-stat">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="6" y1="3" x2="6" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg>
-                61 forks
-              </span>
+              <span class="tag">MongoDB</span>
+              <span class="tag">JWT</span>
             </div>
           </div>
         </article>
@@ -358,77 +687,112 @@
     </div>
   </section>
 
+  <!-- ===== GITHUB CTA BANNER ===== -->
+  <div class="github-cta-banner" aria-label="GitHub call to action">
+    <div class="container">
+      <div class="cta-inner">
+        <p class="cta-text">🌐 Explore more projects and code on my GitHub!</p>
+        <a
+          href="https://github.com/pateltayyaba28-sudo"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-cta-white"
+        >
+          Let's build something amazing together!
+        </a>
+      </div>
+    </div>
+  </div>
+
   <!-- ===== CONTACT ===== -->
   <section class="section contact" id="contact">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-label">Let's Talk</span>
-        <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+        <span class="section-label"><span class="label-bracket">&lt;/&gt;</span> Contact</span>
+        <h2 class="section-title">Get In <span class="pink-text">Touch</span></h2>
       </div>
 
       <div class="contact-grid">
+        <!-- Left: info -->
         <div class="contact-info reveal">
-          <p class="contact-intro">Have a project in mind, a role to fill, or just want to say hello? My inbox is always open — I'll get back to you within 24 hours.</p>
+          <p class="contact-intro">
+            Have a project in mind, a role to fill, or just want to say hello?<br />
+            My inbox is always open — I'll get back to you as soon as possible.
+          </p>
 
           <div class="contact-items">
             <div class="contact-item">
-              <div class="contact-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <div class="contact-icon-wrap">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
               </div>
               <div>
                 <span class="contact-label">Email</span>
-                <a href="mailto:tayyaba@example.com" class="contact-value">tayyaba@example.com</a>
+                <a href="mailto:pateltayyaba28@gmail.com" class="contact-value">pateltayyaba28@gmail.com</a>
               </div>
             </div>
+
             <div class="contact-item">
-              <div class="contact-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div class="contact-icon-wrap">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
               </div>
               <div>
                 <span class="contact-label">Location</span>
-                <span class="contact-value">London, United Kingdom</span>
+                <span class="contact-value">Pimpri Chinchwad, Maharashtra, India</span>
               </div>
             </div>
+
             <div class="contact-item">
-              <div class="contact-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              <div class="contact-icon-wrap">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </div>
+              <div>
+                <span class="contact-label">LinkedIn</span>
+                <a href="https://www.linkedin.com/in/tayyaba-patel-4a045140a/" target="_blank" rel="noopener noreferrer" class="contact-value">tayyaba-patel-4a045140a</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon-wrap">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
               </div>
               <div>
                 <span class="contact-label">Availability</span>
-                <span class="contact-value available">Open to opportunities</span>
+                <span class="contact-value available-badge">
+                  <span class="green-dot" aria-hidden="true"></span>
+                  Open to Opportunities
+                </span>
               </div>
             </div>
           </div>
         </div>
 
-        <form class="contact-form glass reveal delay-1" id="contactForm" novalidate>
+        <!-- Right: form -->
+        <form class="contact-form reveal delay-1" id="contactForm" novalidate>
           <div class="form-row">
             <div class="form-group">
-              <label for="name">Your Name</label>
-              <input type="text" id="name" name="name" placeholder="Jane Smith" autocomplete="name" required />
-              <span class="form-error" id="nameError" role="alert"></span>
+              <label for="fname">Your Name</label>
+              <input type="text" id="fname" name="fname" placeholder="Jane Smith" autocomplete="name" required />
+              <span class="form-error" id="fnameError" role="alert"></span>
             </div>
             <div class="form-group">
-              <label for="email">Email Address</label>
-              <input type="email" id="email" name="email" placeholder="jane@example.com" autocomplete="email" required />
-              <span class="form-error" id="emailError" role="alert"></span>
+              <label for="femail">Email Address</label>
+              <input type="email" id="femail" name="femail" placeholder="jane@example.com" autocomplete="email" required />
+              <span class="form-error" id="femailError" role="alert"></span>
             </div>
           </div>
           <div class="form-group">
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" placeholder="Project enquiry" required />
-            <span class="form-error" id="subjectError" role="alert"></span>
+            <label for="fsubject">Subject</label>
+            <input type="text" id="fsubject" name="fsubject" placeholder="Project enquiry" required />
+            <span class="form-error" id="fsubjectError" role="alert"></span>
           </div>
           <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
-            <span class="form-error" id="messageError" role="alert"></span>
+            <label for="fmessage">Message</label>
+            <textarea id="fmessage" name="fmessage" rows="5" placeholder="Tell me about your project..." required></textarea>
+            <span class="form-error" id="fmessageError" role="alert"></span>
           </div>
           <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
             <span class="btn-text">Send Message</span>
-            <span class="btn-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-            </span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
           </button>
           <div class="form-success" id="formSuccess" role="status" aria-live="polite"></div>
         </form>
@@ -439,17 +803,26 @@
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
     <div class="container">
-      <p class="footer-text">Designed &amp; built by <span class="gradient-text">Tayyaba Patel</span> &mdash; &copy; <span id="year"></span>. All rights reserved.</p>
+      <p class="footer-text">
+        Designed &amp; built with <span class="heart" aria-label="love">&#10084;&#65039;</span> by
+        <span class="pink-text footer-name">Tayyaba Patel</span>
+        &copy; <span id="footerYear">2026</span>
+      </p>
       <div class="footer-socials">
-        <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub" class="social-link">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+        <a href="https://github.com/pateltayyaba28-sudo" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" class="footer-social-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
         </a>
-        <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-link">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        <a href="https://www.linkedin.com/in/tayyaba-patel-4a045140a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" class="footer-social-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
         </a>
       </div>
     </div>
   </footer>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
 
   <script src="script.js"></script>
 </body>
