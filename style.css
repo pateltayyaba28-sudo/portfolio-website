@@ -1692,3 +1692,20 @@ a.contact-value:hover { color: var(--clr-pink); }
     transform: none;
   }
 }
+
+/* ── FREELANCE ADDITIONS ───────────────────────────────────── */
+.hero-freelance { display: inline-block; margin-top: 0.5rem; font-size: var(--text-base); font-weight: 600; color: var(--clr-pink); }
+
+.services { background: var(--clr-bg-alt); }
+.services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: var(--space-md); }
+.service-card { background: var(--clr-white); border: 1px solid var(--clr-border); border-radius: var(--radius-lg); padding: var(--space-md); box-shadow: var(--shadow-card); transition: transform .25s, box-shadow .25s; }
+.service-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-card-hover); }
+.service-icon { font-size: 1.8rem; margin-bottom: var(--space-xs); }
+.service-card h3 { font-size: var(--text-lg); color: var(--clr-text-dark); margin-bottom: 0.5rem; }
+.service-card p { font-size: var(--text-sm); color: var(--clr-text-body); line-height: 1.7; }
+.services-cta { text-align: center; margin-top: var(--space-lg); }
+
+.skill-groups { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-md); }
+.skill-group { background: var(--clr-white); border: 1px solid var(--clr-border); border-radius: var(--radius-lg); padding: var(--space-md); box-shadow: var(--shadow-card); }
+.skill-group-title { font-size: var(--text-base); color: var(--clr-text-dark); margin-bottom: var(--space-sm); }
+.skill-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
